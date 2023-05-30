@@ -11,7 +11,7 @@ public class CompositeBehaviour : Behaviour
         public Behaviour behaviour;
         public float weights;
     }
-    public BehaviourGroup[] Behaviours;
+    public BehaviourGroup[] behaviours;
 
     public override Vector2 CalculateMove(FlockAgent agent,
         List<Transform> context,
@@ -19,7 +19,7 @@ public class CompositeBehaviour : Behaviour
     {
         Vector2 move = Vector2.zero;
 
-        foreach (BehaviourGroup behaviour in Behaviours)
+        foreach (BehaviourGroup behaviour in behaviours)
         {
             Vector2 partialMove = behaviour.behaviour.CalculateMove(agent, context, flock);
             

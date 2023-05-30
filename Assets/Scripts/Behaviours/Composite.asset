@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50108c75697293c4792816eb472c303e, type: 3}
   m_Name: Composite
   m_EditorClassIdentifier: 
-  Behaviours:
+  behaviours:
   - behaviour: {fileID: 11400000, guid: 92afc7347ff21fb4684c5a5b2c9b1c06, type: 2}
     weights: 1
   - behaviour: {fileID: 11400000, guid: aad5c0a189ff6a64297830611fd82d32, type: 2}
-    weights: 1
+    weights: 1.5
   - behaviour: {fileID: 11400000, guid: 96aac9aad06d1cf48b42355822fa0a8a, type: 2}
     weights: 1

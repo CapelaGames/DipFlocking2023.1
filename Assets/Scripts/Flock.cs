@@ -55,10 +55,9 @@ public class Flock : MonoBehaviour
     {
         List<Transform> context = new List<Transform>();
         Collider2D[] contextColliders = Physics2D.OverlapCircleAll(agent.transform.position, contextRadius);
-
-        /*context = contextColliders.ToList((x)=>x.tra);
-        //testing
-        context.Remove(agent.transform);*/
+        
+       // context = contextColliders.Select(x=>x.transform).ToList();
+       // context.Remove(agent.transform);
 
         foreach (Collider2D foundCollider in contextColliders)
         {
